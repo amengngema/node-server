@@ -16,5 +16,10 @@
     "url": "https://github.com/amengngema/node-server/issues"
   },
   "homepage": "https://github.com/amengngema/node-server#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "typescript": "^3.0.3"
+  }
 }
