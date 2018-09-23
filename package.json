@@ -5,7 +5,7 @@
   "scripts": {
     "mongo": "mongod",
     "nodemon": "wait-on ./build/index.js && nodemon ./build/index.js",
-    "start": "concurrently \"rimraf build\" \"npm run mongo\" \"tsc -w\" \"npm run nodemon\" "
+    "start": "concurrently --kill-others \"rimraf build\" \"npm run mongo\" \"tsc -w\" \"npm run nodemon\" "
   },
   "keywords": [],
   "author": "",
