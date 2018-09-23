@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "mongo": "sudo mongod --dbpath=/var/lib/mongod | mongod --dbpath=C:\\Program Files\\MongoDB\\Server\\4.0\bin\\",
-    "nodemon" : "wait-on ./build/index.js && nodemon ./build/index.js",
+    "mongo": "mongod --dbpath=C:\\Program Files\\MongoDB\\Server\\4.0\\bin\\",
+    "nodemon": "wait-on ./build/index.js && nodemon ./build/index.js",
     "start": "concurrently --kill-others \"rimraf build\" \"npm run mongo\" \"tsc -w\" \"npm run nodemon\" "
   },
   "keywords": [],
@@ -31,6 +31,7 @@
     "typescript": "^3.0.3"
   },
   "devDependencies": {
+    "concurrent": "^0.3.2",
     "concurrently": "^4.0.1",
     "wait-on": "^3.0.1"
   }
